@@ -178,6 +178,7 @@ q:after {
   --silver: hsla(0, 0%, 75%, 1);
   --med-blue: hsla(211, 48%, 44%, 1);
   --transp-blue: hsla(211, 48%, 44%, 0.3);
+  --transp-dark-blue: hsla(209, 100%, 30%, 0.3);
   --dark-blue: hsla(209, 100%, 30%, 1);
   --black: 000;
   --standard-font: 'Lato', sans-serif;
@@ -193,9 +194,9 @@ body {
   flex-direction: column;
   align-items: center;
   background: var(--platinum);
-  background: linear-gradient(270deg, var(--platinum) 51%, var(--silver) 93%);
-  background: -moz-linear-gradient(270deg, var(--platinum) 51%, var(--silver) 93%);
-  background: -webkit-linear-gradient(270deg, var(--platinum) 51%, var(--silver) 93%);
+  background: linear-gradient(180deg, var(--platinum) 51%, var(--silver) 93%);
+  background: -moz-linear-gradient(180deg, var(--platinum) 51%, var(--silver) 93%);
+  background: -webkit-linear-gradient(180deg, var(--platinum) 51%, var(--silver) 93%);
   color: var(--platinum);
   font-family: var(--standard-font);
 }
@@ -265,8 +266,11 @@ body {
 	border-top: 0.5rem solid var(--orange);
 }
 
-#background-color {
+.background-color {
   background: var(--transp-blue);
+  background: linear-gradient(45deg, var(--transp-blue) 51%, var(--transp-dark-blue) 93%);
+  background: -moz-linear-gradient(45deg, var(--transp-blue) 51%, var(--transp-dark-blue) 93%);
+  background: -webkit-linear-gradient(45deg, var(--transp-blue) 51%, var(--transp-dark-blue) 93%);
   margin-top: 1rem;
   border-radius: 0.5rem;
   margin-left: 1rem;
@@ -278,11 +282,11 @@ body {
   padding: 1rem;
 }
 
-#background-color p {
+.background-color p {
   margin-bottom: 1rem;
 }
 
-#background-color li {
+.background-color li {
   margin-bottom: 1rem;
 }
 
