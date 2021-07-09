@@ -177,11 +177,14 @@ q:after {
   --platinum: hsla(0, 0%, 92%, 1);
   --silver: hsla(0, 0%, 75%, 1);
   --med-blue: hsla(211, 48%, 44%, 1);
+  --transp-blue: hsla(211, 48%, 44%, 0.3);
   --dark-blue: hsla(209, 100%, 30%, 1);
   --black: 000;
   --standard-font: 'Lato', sans-serif;
   --footer-height-pc: 4rem;
   --header-block-height-pc: 33vh;
+  --header-width-pc: 75vw;
+  --background-color-width-pc: 77vw;
 }
 
 
@@ -199,7 +202,7 @@ body {
 
 #header-color-block {
   height: var(--header-block-height-pc);
-  width: 75vw;
+  width: var(--header-width-pc);
   text-align: center;
   background: var(--med-blue);
   background: linear-gradient(45deg, var(--med-blue) 51%, var(--dark-blue) 93%);
@@ -207,6 +210,8 @@ body {
   background: -webkit-linear-gradient(45deg, var(--med-blue) 51%, var(--dark-blue) 93%);
 
 }
+
+
 
 #name_holder {
   width: 75vw;
@@ -260,12 +265,39 @@ body {
 	border-top: 0.5rem solid var(--orange);
 }
 
+#background-color {
+  background: var(--transp-blue);
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: justify;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  width: var(--background-color-width-pc);
+  padding: 1rem;
+}
+
+#background-color p {
+  margin-bottom: 1rem;
+}
+
+#background-color li {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 50px;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
 #swirls {
-width: auto;
-height: 75vh;
-bottom: 4rem;
-position: fixed;
-z-index: -1;
+  width: auto;
+  height: 75vh;
+  bottom: 4rem;
+  position: fixed;
+  z-index: -1;
 }
 
 .painting {
@@ -287,6 +319,18 @@ z-index: -1;
   left: 5%;
 }
 
+.motto {
+  color: var(--orange);
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.button {
+  background-color: var(--med-blue);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
 
 /*tablet correction*/
 @media screen and (max-width: 800px) {
